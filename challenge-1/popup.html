@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PeMarket</title>
+    <!-- Base Styles -->
+    <link rel="stylesheet" href="popup.css">
+
+    <!-- Component Styles -->
+    <link rel="stylesheet" href="components/EmptyState.css">
+    <link rel="stylesheet" href="components/KeywordList.css">
+    <link rel="stylesheet" href="components/KeywordItem.css">
+    <link rel="stylesheet" href="components/DataTable.css">
+    <link rel="stylesheet" href="components/AnalysisView.css">
+</head>
+
+<body>
+    <div id="app">
+        <div class="header">
+            <div class="top">
+                <div class="logo-close">
+                    <div class="logo">
+                        <div class="cont-img">
+                            <img src="assets/icons/basket.png" alt="Logo">
+                        </div>
+                        <h1>PeMarket</h1>
+                    </div>
+                    <img class="close" src="assets/icons/xmark.png" alt="close" data-action="close">
+                </div>
+                <hr>
+            </div>
+            <div class="header-controls">
+                <h2 class="title">
+                    Compara el precio de un producto en distintas tiendas online
+                </h2>
+                <div class="input">
+                    <input type="text" id="kw" placeholder="Ingrese el producto">
+                    <img src="assets/icons/arrow-right.png" alt="send">
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="top">
+                <p>Búsquedas (0)</p>
+                <div class="filter-container">
+                    <img src="assets/icons/slider.png" alt="filter" id="filter-btn">
+                    <div id="store-selector" class="store-selector-menu hidden">
+                        <label class="store-option">
+                            <input type="checkbox" data-store="falabella" checked>
+                            <span>Falabella</span>
+                        </label>
+                        <label class="store-option">
+                            <input type="checkbox" data-store="mercadolibre" checked>
+                            <span>Mercado Libre</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <p>Sin búsquedas aun</p>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="popup.js"></script>
+</body>
+
+</html>
