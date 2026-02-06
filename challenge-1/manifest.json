@@ -1,0 +1,49 @@
+{
+    "manifest_version": 3,
+    "name": "PeMarket",
+    "version": "3.0.0",
+    "icons": {
+        "16": "assets/icons/logo.png",
+        "48": "assets/icons/logo.png",
+        "128": "assets/icons/logo.png"
+    },
+    "permissions": [
+        "activeTab",
+        "storage",
+        "tabs",
+        "scripting"
+    ],
+    "host_permissions": [
+        "https://www.falabella.com.pe/*",
+        "https://listado.mercadolibre.com.pe/*",
+        "https://www.mercadolibre.com.pe/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://listado.mercadolibre.com.pe/*",
+                "https://www.mercadolibre.com.pe/*"
+            ],
+            "js": [
+                "content-mercadolibre.js"
+            ],
+            "run_at": "document_idle"
+        },
+        {
+            "matches": [
+                "https://www.falabella.com.pe/falabella-pe/*"
+            ],
+            "js": [
+                "content-falabella.js"
+            ],
+            "run_at": "document_idle"
+        }
+    ],
+    "background": {
+        "service_worker": "background.js",
+        "type": "module"
+    },
+    "action": {
+        "default_popup": "popup.html"
+    }
+}
