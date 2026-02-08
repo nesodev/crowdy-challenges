@@ -1,0 +1,154 @@
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    background: #fdfdfd;
+    border-radius: 12px;
+    margin-top: 15px;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+}
+
+.table-title {
+    background: #f8f9fa;
+    padding: 8px 12px;
+    font-size: 11px;
+    font-weight: 700;
+    color: #4b5563;
+    text-transform: uppercase;
+    padding: 10px 14px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #111827;
+    background: #f9fafb;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+table {
+    width: 100%;
+    min-width: 500px;
+    border-collapse: collapse;
+    font-size: 11px;
+}
+
+th {
+    background: #f9fafb;
+    color: #6b7280;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 0.05em;
+    padding: 10px 14px;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+    white-space: nowrap;
+}
+
+td {
+    padding: 10px 14px;
+    color: #374151;
+    border-bottom: 1px solid #f3f4f6;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.col-title {
+    max-width: 180px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.product-link, .price-link {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.2s;
+}
+
+.product-link:hover, .price-link:hover {
+    color: #2563eb;
+    text-decoration: underline;
+}
+
+.price-link.strong {
+    font-weight: 700;
+    color: #000;
+}
+
+.price-link.bold {
+    font-weight: 600;
+}
+
+.site-cell, .stores-cell {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.table-icon {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+}
+
+.mini-inline-icon {
+    width: 12px;
+    height: 12px;
+    object-fit: contain;
+}
+
+.seller-cell {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    max-width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.badge {
+    font-size: 10px;
+}
+
+.tag {
+    display: inline-flex;
+    align-items: center;
+    padding: 3px 8px;
+    border-radius: 6px;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 1;
+    white-space: nowrap;
+}
+
+.tag-price { background: #ecfdf5; color: #059669; border: 1px solid #d1fae5; }
+.tag-official { background: #eff6ff; color: #2563eb; border: 1px solid #dbeafe; }
+.tag-seller { background: #fdf2f8; color: #db2777; border: 1px solid #fce7f3; }
+.tag-rating { background: #fffbeb; color: #d97706; border: 1px solid #fef3c7; }
+.tag-offer { background: #f5f3ff; color: #7c3aed; border: 1px solid #ede9fe; }
+.tag-standard { background: #f9fafb; color: #4b5563; border: 1px solid #e5e7eb; }
+.tag-trust { background: #f0fdf4; color: #16a34a; border: 1px solid #dcfce7; }
+
+.analysis-loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    gap: 15px;
+    color: #888;
+    font-size: 12px;
+}
+
+.spinner {
+    width: 24px;
+    height: 24px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #FF4800;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
