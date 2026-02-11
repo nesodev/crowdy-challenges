@@ -1,0 +1,7 @@
+*.pem
+.DS_Store
+fallabella-extension/
+yt-extension/
+challenge-1/legacy_*.js
+challenge-1/statistics.js
+*.crx
